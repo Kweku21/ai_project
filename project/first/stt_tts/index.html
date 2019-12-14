@@ -1,0 +1,44 @@
+<?php Header("Cache-Control: max-age=3000, must-revalidate"); ?>
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Speech Recognition</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../css/stt.css">
+    <link href="../css/font.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="mycontainer">
+
+        <h1>Speech Recognition</h1>
+
+        <div class="mywebapp">
+            <div class="input">
+                <textarea id="textbox" rows="6"></textarea>
+            </div>
+            <button id="start-btn" title="Start">Start</button>
+            <button id="end-btn" style="display: none" title="Start">Stop</button>
+            <button id="start-btn" title="Start" onclick="speech()">Change To Speech</button>
+
+            <p id="instructions">Press the Start button and Stop to End</p>
+
+        </div>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/stt.js"></script>
+    <script src="../js/tts.js"></script>
+</body>
+
+</html>
